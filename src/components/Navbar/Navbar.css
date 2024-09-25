@@ -1,0 +1,110 @@
+.navbar{
+
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+}
+.logo{
+    width: 200px;
+    
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.signin-button{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    width: 120px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.signin-button:hover{
+    background: tomato;
+}
+
+.navbar .active{
+    padding-bottom: 3px;
+    border-bottom: 3px solid tomato;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.dot{
+    position: absolute;
+    min-width: 15px;
+    min-height: 15px;
+    background: tomato;
+    border-radius: 50%;
+    top: -8px;
+    right: -8px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media(max-width:1050px) {
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media(max-width:900px) {
+    .navbar .logo{
+        width: 120px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media(max-width:750px) {
+    
+    .navbar-menu{
+        display: none;
+    }
+}
